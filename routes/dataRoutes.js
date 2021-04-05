@@ -46,7 +46,9 @@ router.post("/", (req, res) => {
         "<h3>Please fill out all the fields</h3>"
       );
   }
+  //adding new data
   data.push(newData);
+  //return all data
   res.json(data);
 });
 
@@ -93,7 +95,7 @@ router.delete("/:id", (req, res) => {
   );
   if (dataCheck) {
     res.json({
-      note: "data deleted",
+      Note: "data deleted successfully",
       data: data.filter(
         (data) =>
           data.id !== parseInt(req.params.id)
