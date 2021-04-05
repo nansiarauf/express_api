@@ -1,0 +1,16 @@
+GET http://localhost:1000/api/v1/data/1
+
+###
+POST http://localhost:1000/api/v1/data
+Content-Type: application/json
+
+# {
+#     "id":11,
+#     "capital":"tumu",
+#     "region":"upper"
+# }
+###
+DELETE 
+###
+PUT http://localhost:1000/api/v1/data/
+Content-Type: application/json
