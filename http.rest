@@ -1,4 +1,4 @@
-GET http://localhost:1000/api/v1/data/1
+GET http://localhost:1000/api/v1/data/
 
 ###
 POST http://localhost:1000/api/v1/data
