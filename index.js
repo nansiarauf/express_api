@@ -10,7 +10,10 @@ const lPort = process.env.PORT || 1000;
 app.use(express.json());
 
 //INIT HANDLEBARS MIDDLEWARE
-app.engine("handlebars", exhb({ defaultLayout: "main" }));
+app.engine(
+  "handlebars",
+  exhb({ defaultLayout: "main" })
+);
 app.set("view engine", "handlebars");
 
 //DEFAULT MAIN
@@ -26,4 +29,4 @@ app.listen(lPort, () => {
   console.log(`Server started on PORT:${lPort}`);
 });
 
-// module.exports = app;
+module.exports = app;
