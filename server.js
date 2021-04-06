@@ -15,3 +15,5 @@ app.use("/api/v1/data", dataRoutes);
 app.listen(lPort, () => {
   console.log(`Server started on PORT:${lPort}`);
 });
+
+// module.exports = app;
